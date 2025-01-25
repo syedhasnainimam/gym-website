@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Membership</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Membership Plans</h1>
+            <p>Choose the plan that suits you best.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('membership') }}">Membership</a>
+        </div>
+    </nav>
+
+    <section id="plans">
+        <div class="container">
+            <h2>Our Membership Plans</h2>
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>Access to gym facilities during regular hours</p>
+                <p>Free fitness assessment</p>
+                <p>Monthly group classes</p>
+                <p><strong>Price:</strong> $30/month</p>
+                <button>Join Now</button>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>Access to gym facilities 24/7</p>
+                <p>Free fitness assessment</p>
+                <p>Unlimited group classes</p>
+                <p>2 Personal training sessions per month</p>
+                <p><strong>Price:</strong> $50/month</p>
+                <button>Join Now</button>
+            </div>
+            <div class="plan">
+                <h3>Ultimate Plan</h3>
+                <p>Access to gym facilities 24/7</p>
+                <p>Free fitness assessment</p>
+                <p>Unlimited group classes</p>
+                <p>5 Personal training sessions per month</p>
+                <p>Access to special events and workshops</p>
+                <p><strong>Price:</strong> $80/month</p>
+                <button>Join Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <div class="container">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>State-of-the-art gym equipment</li>
+                <li>Friendly and professional staff</li>
+                <li>Clean and hygienic facilities</li>
+                <li>Access to a variety of fitness classes</li>
+                <li>Personalized training programs</li>
+                <li>Exclusive member events and workshops</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Our Gym. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

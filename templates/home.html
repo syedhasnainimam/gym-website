@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Our Gym!</h1>
+            <p>Discover a place where you can achieve your fitness goals.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('membership') }}">Membership</a>
+        </div>
+    </nav>
+
+    <section id="highlights">
+        <div class="container">
+            <h2>Gym Highlights</h2>
+            <div class="highlight">
+                <img src="{{ url_for('static', filename='samuel-girven-fqMu99l8sqo-unsplash.jpg') }}" alt="Modern Equipment">
+                <h3>Modern Equipment</h3>
+                <p>Top-of-the-line machines and free weights for all your workout needs.</p>
+            </div>
+            <div class="highlight">
+                <img src="{{ url_for('static', filename='bruce-mars-pFyKRmDiWEA-unsplash.jpg') }}" alt="Group Classes">
+                <h3>Group Classes</h3>
+                <p>Join our fun and motivating group classes to stay fit and healthy.</p>
+            </div>
+            <div class="highlight">
+                <img src="{{ url_for('static', filename='danielle-cerullo-CQfNt66ttZM-unsplash.jpg') }}" alt="Personal Training">
+                <h3>Personal Training</h3>
+                <p>Get personalized fitness plans and one-on-one training sessions.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Our Gym. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+

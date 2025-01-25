@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Our mission, team, and facilities.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('membership') }}">Membership</a>
+        </div>
+    </nav>
+
+    <section id="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>At Our Gym, our mission is to provide a welcoming environment where individuals can achieve their fitness goals and lead healthier lives. We strive to offer top-notch facilities, modern equipment, and expert guidance to help our members reach their full potential.</p>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='trainer1.jpg') }}" alt="Head Trainer">
+                <h3>John Doe</h3>
+                <p>Head Trainer</p>
+                <p>John has over 10 years of experience in the fitness industry and specializes in strength training and nutrition.</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='trainer2.jpg') }}" alt="Fitness Coach">
+                <h3>Jane Smith</h3>
+                <p>Fitness Coach</p>
+                <p>Jane is a certified fitness coach with a passion for helping clients achieve their health and wellness goals through personalized training programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities">
+        <div class="container">
+            <h2>Our Facilities</h2>
+            <div class="facility">
+                <img src="{{ url_for('static', filename='area.jpg') }}" alt="Gym Area">
+                <h3>State-of-the-Art Gym Area</h3>
+                <p>Our gym features a wide range of modern equipment, including cardio machines, free weights, and resistance training tools.</p>
+            </div>
+            <div class="facility">
+                <img src="{{ url_for('static', filename='facility2.jpg') }}" alt="Yoga Studio">
+                <h3>Yoga and Group Class Studio</h3>
+                <p>We offer a variety of group classes in our spacious studio, including yoga, Pilates, and high-intensity interval training (HIIT).</p>
+            </div>
+            <div class="facility">
+                <img src="{{ url_for('static', filename='facility3.jpg') }}" alt="Swimming Pool">
+                <h3>Indoor Swimming Pool</h3>
+                <p>Our indoor swimming pool is perfect for lap swimming, aqua aerobics, and relaxation.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Our Gym. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
